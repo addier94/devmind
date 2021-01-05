@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <ColorSwitch />
       <BaseLink />
       <Logo />
       <h1 class="title">DevMind</h1>
@@ -28,9 +29,11 @@
 
 <script>
 import BaseLink from '@/components/ui/BaseLink'
+import ColorSwitch from '@/components/ui/ColorSwitch.vue'
 export default {
   components: {
     BaseLink,
+    ColorSwitch,
   },
 }
 </script>
