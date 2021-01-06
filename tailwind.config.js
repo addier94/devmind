@@ -13,8 +13,9 @@ module.exports = {
           300: '#EAEDF2',
         },
         'blue-main': {
-          800: '#EAEDF2',
-          900: '#2D2D3A',
+          // TODO review this colors, maybe are gray
+          800: '#1C1C24',
+          900: '#131419',
         },
       },
     },

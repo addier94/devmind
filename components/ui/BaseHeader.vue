@@ -29,5 +29,7 @@ export default {
 <style scoped>
 .header {
   @apply flex items-center justify-between p-4;
+
+  height: var(--header);
 }
 </style>
