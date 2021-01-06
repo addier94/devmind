@@ -6,7 +6,11 @@
       class="cursor-pointer"
       @click="changeTheme('dark')"
     />
-    <IconLight v-else class="cursor-pointer" @click="changeTheme('light')" />
+    <IconLight
+      v-else
+      class="cursor-pointer fill-current text-white"
+      @click="changeTheme('light')"
+    />
   </div>
 </template>
 
