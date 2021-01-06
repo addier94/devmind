@@ -1,8 +1,18 @@
 <template>
   <div>
-    <Nuxt />
+    <BaseHeader />
+    <main class="bg-light dark:bg-dark">
+      <Nuxt />
+    </main>
   </div>
 </template>
+
+<script>
+import BaseHeader from '@/components/ui/BaseHeader.vue'
+export default {
+  BaseHeader,
+}
+</script>
 
 <style>
 html {
