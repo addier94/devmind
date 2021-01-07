@@ -9,13 +9,16 @@ module.exports = {
         dark: theme('colors.blue-main.900'),
       }),
       colors: {
+        'red-main': {
+          600: '#F43D35',
+        },
         'gray-main': {
           300: '#EAEDF2',
         },
         'blue-main': {
           // TODO review this colors, maybe are gray
-          800: '#1C1C24',
-          900: '#131419',
+          800: '#0d1131',
+          900: '#070919',
         },
       },
     },
