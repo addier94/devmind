@@ -39,6 +39,8 @@ export default {
     '@nuxtjs/pwa',
     // https://www.npmjs.com/package/@nuxtjs/svg
     '@nuxtjs/svg',
+    // https://firebase.nuxtjs.org
+    '@nuxtjs/firebase',
   ],
 
   colorMode: {
@@ -47,8 +49,32 @@ export default {
     classSuffix: '',
   },
 
+  firebase: {
+    config: {
+      apiKey: process.env.VUE_APP_FIREBASE_KEY,
+      authDomain: 'devmind-a120c.firebaseapp.com',
+      databaseURL: 'https://devmind-a120c.firebaseio.com',
+      projectId: 'devmind-a120c',
+      storageBucket: 'devmind-a120c.appspot.com',
+      messagingSenderId: '176367745988',
+      appId: '1:176367745988:web:6b2c46cea937ba1a288291',
+      measurementId: 'G-0EPPBG7L9F',
+    },
+    services: {
+      auth: true,
+      firestore: true,
+      storage: true,
+      analytics: true,
+      performance: true,
+    },
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+
+  env: {
+    VUE_APP_FIREBASE_KEY: process.env.VUE_APP_FIREBASE_KEY,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
